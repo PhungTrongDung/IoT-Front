@@ -3,6 +3,3 @@ In this tutorial ([Open in Youtube](https://youtu.be/D88K1esxwuo)),  I'm going t
 
 # Screenshot
 Here we have project screenshot :
-
-![screenshot1](screenshot1.png)
-![screenshot2](screenshot2.png)
