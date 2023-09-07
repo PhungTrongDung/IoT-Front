@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profile.css">
+    <title>Dashboard Design | Profile</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span></span>Dashboard</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx bx-history'></i>History</a></li>
+            <li><a href="#"><i class='bx bx-analyse'></i>Data Analytics</a></li>
+            <li class="active"><a href="#"><i class='bx bx-group'></i>Profiles</a></li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="profile">
+                <img src="images/dashboard-logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Profiles</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="profile-page">
+                <div class="wrapper">
+                    <div class="profile-header">
+                        <div class="header-content">
+                            <span class="">Dashboard</span>
+                        </div>
+                        <div class="profile-logo">
+                            <i class='icon-logo bx bxs-user'></i>
+                        </div>
+                    </div>
+                    <div class="profile-content">
+                        <div class="content-line user">
+                            <i class='icon bx bx-user'></i>
+                            <span class="content-text">Phùng Trọng Dũng</span>
+                        </div>
+                        <div class="content-line msv">
+                            <i class='icon bx bx-key'></i>
+                            <span class="content-text">B20DCCN141</span>
+                        </div>
+                        <div class="content-line sdt">
+                            <i class='icon bx bx-mobile'></i>
+                            <span class="content-text">0357011893</span>
+                        </div>
+                        <div class="content-line email">
+                            <i class='icon bx bx-envelope'></i>
+                            <span class="content-text">phungtrongdung2002@gmail.com</span>
+                        </div>
+                        <div class="content-line button-edit-wrap">
+                            <button class="button-edit">Edit profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            // Set Data
+            const data = google.visualization.arrayToDataTable([
+                ['Price', 'Size'],
+                [50, 7], [60, 8], [70, 8], [80, 9], [90, 9],
+                [100, 9], [110, 10], [120, 11],
+                [130, 14], [140, 14], [150, 15]
+            ]);
+
+            // Set Options
+            const options = {
+                title: 'Temperature vs. Humidity',
+                //   hAxis: {title: 'Square Meters'},
+                //   vAxis: {title: 'Price in Millions'},
+                legend: 'none'
+            };
+
+            // Draw
+            const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+
+        }
+    </script>
+</body>
+
+</html>

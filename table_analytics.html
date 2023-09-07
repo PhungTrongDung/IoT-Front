@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="table.css">
+    <title>Dashboard Design | Table Analytics</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span></span>Dashboard</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx bx-history' ></i>History</a></li>
+            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Data Analytics</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Profiles</a></li>
+        </ul>
+        <!-- <ul class="side-menu">
+            <li>
+                <a href="#" class="log logout">
+                    <i class='bx bx-log-in-circle'></i>
+                    Login
+                </a>
+                <a href="#" class="log logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul> -->
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            
+            <a href="#" class="profile">
+                <img src="images/dashboard-logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Table Analytics</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Temperature</th>
+                            <th class="humidity-row">Humidity</th>
+                            <th class="light-row">Light</th>
+                            <th class="time-row">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>28</td>
+                            <td>48,110</td>
+                            <td>1200</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 10:52 PM</time></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>29</td>
+                            <td>52,400</td>
+                            <td>1200</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 10:53 PM</time></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>30</td>
+                            <td>32,300</td>
+                            <td>1250</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 10:57 PM</time></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>37</td>
+                            <td>52,300</td>
+                            <td>1400</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 10:59 PM</time></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>26</td>
+                            <td>46,300</td>
+                            <td>1200</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 11:00 PM</time></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>31</td>
+                            <td>35,300</td>
+                            <td>1300</td>
+                            <td><time datetime="2023-08-30T12:00:00Z">June 9, 2023, 11:02 PM</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <!-- <table>
+                <tr>
+                    <th class="temperature">Temperature</th>
+                    <th class="humidity">Humidity</th>
+                    <th class="light">Light</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>1200 lux</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>30</td>
+                    <td>1300 lux</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>32</td>
+                    <td>1250 lux</td>
+                </tr>
+            </table> -->
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

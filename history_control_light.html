@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="history_control.css">
+    <title>Dashboard Design | History</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span></span>Dashboard</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li class="active"><a href="#"><i class='bx bx-history' ></i>History</a></li>
+            <li><a href="#"><i class='bx bx-analyse'></i>Data Analytics</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Profiles</a></li>
+        </ul>
+        <!-- <ul class="side-menu">
+            <li>
+                <a href="#" class="log logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul> -->
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="profile">
+                <img src="images/dashboard-logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">History</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+
+            <div class="bottom-data">
+                <div class="histories">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>History Remote</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <td>
+                                    <i class='bx bxs-user-circle' ></i>
+                                    <p>Admin</p>
+                                </td>
+                                <td><time datetime="2023-06-9T11:00:00Z">June 9, 2023, 11:00 PM</time></td>
+                                <td><span class="status completed">On</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='bx bxs-user-circle' ></i>
+                                    <p>Admin</p>
+                                </td>
+                                <td><time datetime="2023-06-9T11:10:00Z">June 9, 2023, 11:10 PM</time></td>
+                                <td><span class="status pending">Off</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='bx bxs-user-circle' ></i>
+                                    <p>Admin</p>
+                                </td>
+                                <td><time datetime="2023-06-9T11:15:00Z">June 9, 2023, 11:15 PM</time></td>
+                                <td><span class="status completed">On</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='bx bxs-user-circle' ></i>
+                                    <p>Admin</p>
+                                </td>
+                                <td><time datetime="2023-06-9T11:20:00Z">June 9, 2023, 11:20 PM</time></td>
+                                <td><span class="status pending">Off</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class='bx bxs-user-circle' ></i>
+                                    <p>Admin</p>
+                                </td>
+                                <td><time datetime="2023-06-9T11:25:00Z">June 9, 2023, 11:25 PM</time></td>
+                                <td><span class="status completed">On</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Design | HomePage</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span></span>Dashboard</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx bx-history'></i>History</a></li>
+            <li><a href="#"><i class='bx bx-analyse'></i>Data Analytics</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Profiles</a></li>
+        </ul>
+        <!-- <ul class="side-menu">
+            <li>
+                <a href="#" class="log logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul> -->
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="profile">
+                <img src="images/dashboard-logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Dashboard</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <!-- <i class='bx bx-calendar-check'></i> -->
+                    <i class='bx bxs-thermometer'></i>
+                    <span class="info">
+                        <h3 class="temperature-content">
+                            28
+                        </h3>
+                        <p>Temperature</p>
+                    </span>
+                </li>
+                <li>
+                    <!-- <i class='bx bx-show-alt'></i> -->
+                    <i class='bx bx-droplet'></i>
+                    <span class="info">
+                        <h3 class="humidity-content">
+                            25
+                        </h3>
+                        <p>Humidity</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-sun'></i>
+                    <span class="info">
+                        <h3 class="light-content">
+                            1300
+                        </h3>
+                        <p>Light</p>
+                    </span>
+                </li>
+                <!-- <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            $6,742
+                        </h3>
+                        <p>Total Sales</p>
+                    </span>
+                </li> -->
+            </ul>
+            <!-- End of Insights -->
+
+            <!-- Chart -->
+
+            <div class="chart-and-light">
+                <div class="chart">
+                    <div id="myChart"></div>
+                </div>
+                <div class="remote-light-contain">
+                    <div class="remote-light-wrap">
+                        <div class="remote-light remote-light-top">
+                            <button class="button-light light-turn-on">ON</button>
+                            <button class="button-light light-turn-off">OFF</button>
+                        </div>
+                        <!-- <div class="remote-light remote-light-bottom">
+                            <button class="button-light light-turn-on">ON</button>
+                            <button class="button-light light-turn-off">OFF</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Chart -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Recent Orders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Remiders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Start Our Meeting</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analyse Our Site</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Play Footbal</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+            
+            // Set Data
+            const data = new google.visualization.DataTable();
+            data.addColumn("datetime", "Time");
+            data.addColumn("number", "Temperature (°C)");
+            data.addColumn("number", "Humidity (%)");
+            data.addColumn("number", "Light Intensity (lux)");
+  
+            data.addRows([
+                [new Date(2023, 7, 30, 12, 0, 0), 25, 30, 400],
+                [new Date(2023, 7, 30, 12, 15, 0), 29, 50, 420],
+                [new Date(2023, 7, 30, 12, 30, 0), 27, 48, 480],
+                [new Date(2023, 7, 30, 12, 45, 0), 32, 40, 500],
+                [new Date(2023, 7, 30, 13, 0, 0), 28, 58, 550],
+                [new Date(2023, 7, 30, 13, 15, 0), 25, 65, 520],
+            ]);
+  
+            const options = {
+                title: "Environmental Data vs. Time",
+                curveType: "function",
+                legend: 'bottom',
+                width: 800,
+                height: 500
+            };
+  
+            var chart = new google.visualization.LineChart(document.getElementById("myChart"));
+    
+            chart.draw(data, options);
+        }
+    </script>
+
+</body>
+
+</html>
